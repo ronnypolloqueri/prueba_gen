@@ -1,0 +1,86 @@
+  <%= javascript_include_tag "jscolor" %>
+
+Color: <input class="color {onImmediateChange:'updateInfo(this);'}" value="66ff00">
+  R: <input id="info-r" size="2" />,
+  G: <input id="info-g" size="2" />,
+  B: <input id="info-b" size="2" />
+</div>
+
+
+<%= form_for(@archivo) do |f| %>
+  <% if @archivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@archivo.errors.count, "error") %> prohibited this archivo from being saved:</h2>
+
+      <ul>
+      <% @archivo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :r %><br>
+    <%= f.text_field :r %>
+  </div>
+  <div class="field">
+    <%= f.label :g %><br>
+    <%= f.text_field :g %>
+  </div>
+  <div class="field">
+    <%= f.label :b %><br>
+    <%= f.text_field :b %>
+  </div>
+  <div class="field">
+    <%= f.label :num_lados %><br>
+    <%= f.number_field :num_lados %>
+  </div>
+  <div class="field">
+    <%= f.label :size_lados %><br>
+    <%= f.number_field :size_lados %>
+  </div>
+  <div class="field">
+    <%= f.label :trasladar_x %><br>
+    <%= f.text_field :trasladar_x %>
+  </div>
+  <div class="field">
+    <%= f.label :trasladar_y %><br>
+    <%= f.text_field :trasladar_y %>
+  </div>
+  <div class="field">
+    <%= f.label :trasladar_z %><br>
+    <%= f.text_field :trasladar_z %>
+  </div>
+  <div class="field">
+    <%= f.label :escalar_x %><br>
+    <%= f.text_field :escalar_x %>
+  </div>
+  <div class="field">
+    <%= f.label :escalar_y %><br>
+    <%= f.text_field :escalar_y %>
+  </div>
+  <div class="field">
+    <%= f.label :escalar_z %><br>
+    <%= f.text_field :escalar_z %>
+  </div>
+  <div class="field">
+    <%= f.label :rotar_x %><br>
+    <%= f.text_field :rotar_x %>
+  </div>
+  <div class="field">
+    <%= f.label :rotar_y %><br>
+    <%= f.text_field :rotar_y %>
+  </div>
+  <div class="field">
+    <%= f.label :rotar_z %><br>
+    <%= f.text_field :rotar_z %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

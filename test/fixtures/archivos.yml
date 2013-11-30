@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  r: 1
+  g: 1
+  b: 1
+  num_lados: 1
+  size_lados: 1
+  trasladar_x: MyString
+  trasladar_y: MyString
+  trasladar_z: MyString
+  escalar_x: MyString
+  escalar_y: MyString
+  escalar_z: MyString
+  rotar_x: MyString
+  rotar_y: MyString
+  rotar_z: MyString
+
+two:
+  nombre: MyString
+  r: 1
+  g: 1
+  b: 1
+  num_lados: 1
+  size_lados: 1
+  trasladar_x: MyString
+  trasladar_y: MyString
+  trasladar_z: MyString
+  escalar_x: MyString
+  escalar_y: MyString
+  escalar_z: MyString
+  rotar_x: MyString
+  rotar_y: MyString
+  rotar_z: MyString

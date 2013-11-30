@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @archivo.nombre %>
+</p>
+
+<p>
+  <strong>R:</strong>
+  <%= @archivo.r %>
+</p>
+
+<p>
+  <strong>G:</strong>
+  <%= @archivo.g %>
+</p>
+
+<p>
+  <strong>B:</strong>
+  <%= @archivo.b %>
+</p>
+
+<p>
+  <strong>Num lados:</strong>
+  <%= @archivo.num_lados %>
+</p>
+
+<p>
+  <strong>Size lados:</strong>
+  <%= @archivo.size_lados %>
+</p>
+
+<p>
+  <strong>Trasladar x:</strong>
+  <%= @archivo.trasladar_x %>
+</p>
+
+<p>
+  <strong>Trasladar y:</strong>
+  <%= @archivo.trasladar_y %>
+</p>
+
+<p>
+  <strong>Trasladar z:</strong>
+  <%= @archivo.trasladar_z %>
+</p>
+
+<p>
+  <strong>Escalar x:</strong>
+  <%= @archivo.escalar_x %>
+</p>
+
+<p>
+  <strong>Escalar y:</strong>
+  <%= @archivo.escalar_y %>
+</p>
+
+<p>
+  <strong>Escalar z:</strong>
+  <%= @archivo.escalar_z %>
+</p>
+
+<p>
+  <strong>Rotar x:</strong>
+  <%= @archivo.rotar_x %>
+</p>
+
+<p>
+  <strong>Rotar y:</strong>
+  <%= @archivo.rotar_y %>
+</p>
+
+<p>
+  <strong>Rotar z:</strong>
+  <%= @archivo.rotar_z %>
+</p>
+
+<%= link_to 'Edit', edit_archivo_path(@archivo) %> |
+<%= link_to 'Back', archivos_path %>

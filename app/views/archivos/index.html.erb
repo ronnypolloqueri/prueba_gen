@@ -1,0 +1,55 @@
+<h1>Listing archivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>R</th>
+      <th>G</th>
+      <th>B</th>
+      <th>Num lados</th>
+      <th>Size lados</th>
+      <th>Trasladar x</th>
+      <th>Trasladar y</th>
+      <th>Trasladar z</th>
+      <th>Escalar x</th>
+      <th>Escalar y</th>
+      <th>Escalar z</th>
+      <th>Rotar x</th>
+      <th>Rotar y</th>
+      <th>Rotar z</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @archivos.each do |archivo| %>
+      <tr>
+        <td><%= archivo.nombre %></td>
+        <td><%= archivo.r %></td>
+        <td><%= archivo.g %></td>
+        <td><%= archivo.b %></td>
+        <td><%= archivo.num_lados %></td>
+        <td><%= archivo.size_lados %></td>
+        <td><%= archivo.trasladar_x %></td>
+        <td><%= archivo.trasladar_y %></td>
+        <td><%= archivo.trasladar_z %></td>
+        <td><%= archivo.escalar_x %></td>
+        <td><%= archivo.escalar_y %></td>
+        <td><%= archivo.escalar_z %></td>
+        <td><%= archivo.rotar_x %></td>
+        <td><%= archivo.rotar_y %></td>
+        <td><%= archivo.rotar_z %></td>
+        <td><%= link_to 'Show', archivo %></td>
+        <td><%= link_to 'Edit', edit_archivo_path(archivo) %></td>
+        <td><%= link_to 'Destroy', archivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Archivo', new_archivo_path %>
